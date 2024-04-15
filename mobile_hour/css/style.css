@@ -1,0 +1,796 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+ul{
+    list-style: none;
+}
+
+/*==header==*/
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#admin{
+    background-color: blue;
+}
+
+#admin p{
+    color: white;
+}
+
+.logo{
+    padding: 30px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.header_logo{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+    font-size: 50px;
+}
+
+.search{
+    padding: 30px;
+}
+
+.search input{
+    padding: 5px;
+    width: 300px;
+}
+
+.search button{
+    font-size: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 33px;
+    background-color: grey;
+}
+
+#mobile{
+    display: none;
+}
+
+.icons{
+    padding: 30px;
+}
+
+.icons i{
+    padding: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+.icons a{
+    color: black;
+    padding-right: 25px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icons i:hover, .icons a:hover{
+    color: red;
+}
+
+.icons a:hover{
+    text-decoration: underline;
+}
+
+.fa-user:hover > a{
+    color: red;
+    text-decoration: underline;
+}
+
+/*navbar*/
+.menu-icon,
+.menu-btn{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: red;
+    padding: 0px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.menu li{
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: -16px;
+}
+
+.menu li a{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: white;
+}
+
+.menu li:hover > a{
+    color: red;
+}
+
+/*==image==*/
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+
+/*==phones==*/
+.phones-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.phone-box{
+    position: relative;
+    padding: 20px;
+    outline: solid black 1px;
+    width: 30%;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.phone-box img{
+    width: auto;
+    height: 220px;
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+.phone-box span{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+}
+
+.phone-box:hover{
+    text-decoration: underline;
+}
+
+.phone-box img:hover{
+    height: 300px;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    outline: solid black 2px;
+    background-color: white;
+}
+
+#footer-left {
+	flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+#footer-left p{
+    font-size: 17px;
+}
+
+.container{
+    text-align: right;
+}
+
+.container button{
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid 1px red;
+    margin-top: 5px;
+}
+
+.btn-round:hover{
+    background-color: white;
+    color: red;
+    cursor: grab;
+    border: solid 1px red;
+}
+
+.d-flex button{
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: solid 1px red;
+}
+
+
+/*All phones*/
+.menu-icon-all,
+.menu-btn-all{
+    display: none;
+}
+
+section{
+    min-height: 70vh;
+    height: auto !important; 
+    height: 100%;
+}
+.filter{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 30px;
+}
+.col-md-3{
+    width: 100%;
+}
+
+.cat_id{
+    padding-top: 10px;
+}
+
+.allphones{
+    display: inline-block;
+    vertical-align: top;    
+    width: 78%;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 50px;
+}
+
+.grid-container {
+	display: grid;
+	gap: 1% 1%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-auto-flow: row;
+    padding: 20px;
+    float: right;
+    width: 100%;
+    text-align: left;
+}
+
+.grid-container a{
+    text-decoration: none;
+}
+
+.grid-container a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.grid-container img {
+	max-height: 200px;
+    margin-bottom: 10px;
+}
+
+.first_row {
+    display: block;
+	grid-column-start: 1;
+	grid-column-end: 4;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.item {
+	padding: 5px;
+    margin-bottom: 20px;
+}
+
+.item p{
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 3px;
+}
+
+/*Admin home*/
+.logout{
+    float: right;
+}
+.logout button{
+    background-color: blue;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid 1px blue;
+    margin-top: 5px;
+}
+.logout a{
+    color: white;
+}
+.logout button:hover{
+    background-color: white;
+    cursor: grab;
+    border: solid 1px blue;
+}
+.logout button:hover > a{
+    color: blue;
+    text-decoration: none;
+}
+
+/*Add new product*/
+section{
+    padding: 20px 40px;
+    height: 100vh;
+}
+
+/*Admin ptoduct*/
+.imgthumb {
+	max-width: 50px;
+}
+
+/*Admin users*/
+.form-group button{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.form-row label{
+    margin-top: 20px;
+}
+
+/*My account*/
+.container{
+    width: 600px;
+    text-align: center;
+}
+.content{
+    padding-top: 50px;
+    height: 70vh;
+}
+
+.input-group{
+    margin-top: 30px;
+}
+
+.input-group button{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.input-group button:hover{
+    background-color: white;
+    color: red;
+    border: solid 1px red;
+} 
+
+.row{
+    padding-left: 20px;
+}
+
+/*Customer home*/
+.customer{
+    height: 70vh;
+}
+
+.customer h2{
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:810px){
+
+/*==header==*/
+    .logo{
+        padding: 20px;
+    }
+    
+    .header_logo{
+        font-size: 30px;
+    }
+    
+    .search{
+        padding: 20px;
+    }
+    
+    .search input{
+        padding: 3px;
+        width: 200px;
+    }
+    
+    .search button{
+        font-size: 15px;
+        margin-left: 10px;
+        width: 50px;
+        height: 25px;
+    }
+    
+    .icons{
+        padding: 20px;
+    }
+    
+    .icons i{
+        padding: 20px;
+        font-size: 15px;
+    }
+    
+    .icons a{
+        padding-right: 15px;
+        font-size: 15px;
+    }
+
+/*navbar*/
+.navbar{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu{
+    position: absolute;
+    display: none;
+    top: 35px;
+    left: 0px;
+    background-color: red;
+    border-bottom: 1px solid white;
+    width: 25%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 100;
+}
+
+.menu-icon{
+    display: block;
+    width: 100%;;
+}
+
+.menu-icon:hover{
+    cursor: grab;
+}
+
+.nav-icon i{
+    align-items: center ;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu li{
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 0px;
+    border: 0.5px solid white;
+}
+
+.menu li a{
+    font-size: 15px;
+    display: flex;
+}
+
+.menu-btn:checked ~ .menu{
+    display: block !important;
+}
+
+/*==phones==*/
+.phone-box{
+    padding: 15px;
+    outline: solid black 1px;
+    width: 32%;
+    margin: 0 10px;
+}
+
+.phone-box img{
+    height: 180px;
+    padding: 15px;
+}
+
+.phone-box span{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.phone-box img:hover{
+    height: 200px;
+}
+
+/*footer*/
+footer{
+    padding: 5px;
+    outline: solid black 1px;
+}
+
+#footer-left {
+    padding: 5px;
+}
+
+#footer-left p{
+    font-size: 12px;
+}
+
+.container{
+    text-align: right;
+}
+
+.container button{
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+/*All phones*/
+.filter{
+    width: 100%;
+}
+
+.filter h5{
+    font-size: 18px;
+}
+
+.card-header{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.card-header button{
+    font-size: 13px;
+}
+
+.menu-icon-all{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.menu-icon-all:hover{
+    cursor: grab;
+}
+
+
+.card-body{
+    display: none;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+h6{
+    font-size: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+.cat_id{
+    padding-top: 3px;
+    font-size: 15px;
+}
+
+.col-md-4 input{
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.card-footer{
+    display: none;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.card-footer a{
+    font-size: 13px;
+}
+
+.menu-btn-all:checked ~ .card-body,
+.menu-btn-all:checked ~ .card-footer{
+    display: block !important;
+}
+
+.allphones{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.grid-container img {
+	max-height: 160px;
+    margin-bottom: 10px;
+}
+
+.first_row {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*Admin home*/
+.logout button{
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+section h1{
+    font-size: 35px;
+}
+
+
+/*Add new product*/
+section{
+    padding: 15px 30px;
+}
+
+/*My account*/
+.container{
+    width: 400px;
+    text-align: center;
+}
+
+.input-group{
+    margin-top: 20px;
+}
+
+.input-group input{
+    font-size: 18px;
+}
+
+.input-group button{
+    margin-top: 10px;
+    font-size: 18px;
+}
+}
+
+@media (max-width:450px){
+/*==header==*/
+header{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 60px;
+}
+.logo{
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.header_logo{
+    font-size: 25px;
+}
+
+.search{
+    display: none;
+}
+
+#screen{
+    display: none;
+}
+
+#mobile{
+    display: inline-block;
+}
+
+.icons i{
+    padding-top: 25px;
+    padding-right: 5px;
+}
+
+/*==phones==*/
+.phones-container{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px 20px 20px;
+    margin: 0px;
+}
+.phone-box{
+    text-align: center;
+    display: block;
+    padding: 0px;
+    outline: solid gray 0.5px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.phone-box img{
+    height: 100px;
+    padding: 10px;
+}
+
+.phone-box span{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.phone-box img:hover{
+    height: 120px;
+}
+
+/*footer*/           
+.container{
+    width: 100%;
+}
+
+/*All phones*/  
+.row{
+    padding-left: 0px;
+    margin-left: 0px;
+}  
+.col-md-4{
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-bottom: 7px;
+}    
+.col-md-4 input{
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.allphones{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.grid-container {
+	display: grid;
+	gap: 1%;
+    grid-column-gap: 10%;
+	grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    padding-left: 0px;
+    padding-top: 40px;
+
+}
+
+.grid-container img {
+    max-height: 160px;
+    margin-bottom: 10px;
+}
+
+.first_row {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 20px;
+}
+    
+/*Admin home*/
+section h1{
+    font-size: 25px;
+}
+
+}
+
+
